@@ -8,3 +8,6 @@ app.listen(port, () => {
 app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/public/index.html');
 });
+app.get('/test', (req, res) => {
+	res.sendFile(__dirname + '/public/test/test.html');
+});
